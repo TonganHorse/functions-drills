@@ -263,13 +263,13 @@ let answers = [];
 for (let i = 0; i < arr.length; i++) {
   if (arr[i] > 100) {
     answers.push('big')
-  } else {
+  } else 
     answers.push('small')
   } 
   return answers
-}}
+}
 let arrayEvaluator = bigOrSmall(bigOrSmallArray);
-console.log(bigOrSmall(bigOrSmallArray));
+console.log(arrayEvaluator);
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
@@ -283,14 +283,14 @@ let loser = 'Glimmer'
 
 function theEliminator(contestants, loser) {
   for (let i = 0; i < contestants.length; i++) {
-    if(contestants[i] === loser) {
-      contestants.splice(i, 1)
+    if(contestants[i] ===loser){
+      contestants.splice(i, 1);
+      return contestants
     }
-    return contestants
   }
 }
-let newContestants = theEliminator(contestants, loser)
-console.log(newContestants)
+let newContestants = theEliminator(contestants, loser);
+console.log(newContestants);
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
 /*
